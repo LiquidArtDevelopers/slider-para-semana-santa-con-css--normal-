@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Slider con Kilometros</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="contenido_km">
+    <h2>Selecciona la distancia en KILOMETROS a tu destino</h2>
+    <div class="range-slider">
+    <span id="rs_bala" class="rs_label">0</span>
+    <input id="rs_range_line" class="rs_range" type="range" value="0" min="0" max="1300" step="50">
+    <div class="minimo_maximo">
+        <span>0 km</span><span>1300 km</span>
+    </div>
+    </div>
+
+</div>
+<div class="combustible">
+    <form action="combustible">
+    <h2>Tipo de combustible</h2>
+    <select name="combustible" id="combustible">
+        <option value="sp95">Sin plomo 95</option>
+        <option value="sp98">Sin plomo 98</option>
+        <option value="diesel">Diesel</option>
+        <option value="diesel+">Diesel A+</option>
+        <option value="electrico">Eléctrico</option>
+    </select>
+    </form>
+</div>
+<div id="texto_cambiante" class="texto_cambiante">
+    
+</div>
+</div>
+
+<script  src="./js/script.js"></script>
+
+</body>
+</html>
